@@ -48,6 +48,6 @@ variable "business_unit" {
 
 variable "location_code" {
   description = "The Azure region where the resource is deployed. Examples: cu (centralus), eu (eastus2), westeu, usva, ustx"
-  type = string
-  default = ""
+  type        = string
+  default     = ""
 }
