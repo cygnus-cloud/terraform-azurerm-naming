@@ -21,6 +21,7 @@ locals {
   prefix                 = join("-", var.prefix)
   prefix_safe            = lower(join("", var.prefix))
   my_suffix              = concat(var.business_unit, var.service_name, var.environment, var.location_code)
+  m2suffix               = concat(var.business_unit, var.service_name, var.environment, var.location_code)
   suffix                 = join("-", var.suffix)
   suffix_unique          = join("-", concat(var.suffix, [local.random]))
   suffix_safe            = lower(join("", var.suffix))
