@@ -21,3 +21,10 @@ jobs:
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
+
+      - name: Setup TFLint
+        uses: terraform-linters/setup-tflint@v3.1.1
+
+      - name: Launch TFLint
+        run: tflint
+
