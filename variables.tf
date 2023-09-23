@@ -34,8 +34,14 @@ variable "environment" {
   default     = "dev"
 }
 
-variable "purpose" {
-  description = "If you want to include numbers in the unique generation"
+variable "service_name" {
+  description = "Name of the application, workload, or service that the resource is a part of. Examples: navigator, emissions, sharepoint, hadoop"
+  type        = string
+  default     = ""
+}
+
+variable "business_unit" {
+  description = "Top-level division of your company that owns the subscription or workload the resource belongs to. In smaller organizations, this component might represent a single corporate top-level organizational element. Examples: fin, mktg, product, it, corp"
   type        = string
   default     = ""
 }
