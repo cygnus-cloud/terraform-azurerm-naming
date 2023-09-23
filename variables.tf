@@ -27,3 +27,15 @@ variable "unique-include-numbers" {
   type        = bool
   default     = true
 }
+
+variable "environment" {
+  description = "If you want to include numbers in the unique generation"
+  type        = string
+  default     = "dev"
+}
+
+variable "purpose" {
+  description = "If you want to include numbers in the unique generation"
+  type        = string
+  default     = ""
+}
