@@ -29,7 +29,7 @@ variable "unique-include-numbers" {
 }
 
 variable "environment" {
-  description = "If you want to include numbers in the unique generation"
+  description = "The stage of the development lifecycle for the workload that the resource supports. Examples: prod, dev, qa, stage, test"
   type        = string
   default     = "dev"
 }
@@ -44,4 +44,10 @@ variable "business_unit" {
   description = "Top-level division of your company that owns the subscription or workload the resource belongs to. In smaller organizations, this component might represent a single corporate top-level organizational element. Examples: fin, mktg, product, it, corp"
   type        = string
   default     = ""
+}
+
+variable "location_code" {
+  description = "The Azure region where the resource is deployed. Examples: cu (centralus), eu (eastus2), westeu, usva, ustx"
+  type = string
+  default = ""
 }
